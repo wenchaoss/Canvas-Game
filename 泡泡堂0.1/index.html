@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>泡泡堂</title>
+	<style type="text/css">
+		#canvas{
+			margin-left: 100px;
+			margin-top: 50px;
+			margin-bottom: : 50px;
+		}
+		*{
+			margin: 0;
+			position: 0;
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+		div{
+			width: 320px;
+			height: 200px;
+			border:1px pink solid;
+			margin-left: 100px;
+			padding-left: 30px;
+		}
+		.f{
+			margin-left: -30px;
+		}
+	</style>
+</head>
+<body>
+	<canvas width="360" height="320" id="canvas"></canvas>
+	<div><p class="f">version0.1</p>
+		 <p class="f">注意：</p>
+		<p> 海盗wasd控制方向，k放炸弹</p>
+		<p> 红宝宝上下左右控制方向，空格放炸弹</p>
+		<p> 炸弹范围为1，默认最大泡泡数量为3</p>
+		<p> 炸弹放置安全时间为2.6秒</p>
+		<p> 被炸死请刷新页面</p>
+	</div>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="js/Paopao.js"></script>
+	<script type="text/javascript" src="js/p1.js"></script>
+	<script type="text/javascript" src="js/Ai.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/Game.js"></script>
+	<script type="text/javascript">
+		var g = new Game();
+	</script>
+</body>
+</html>
